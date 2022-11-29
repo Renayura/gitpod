@@ -20,11 +20,6 @@ RUN apt-get update && apt-get install -y && \
     texinfo unzip w3m xsltproc zip zlib1g-dev lzip \
     libxml-simple-perl libswitch-perl apt-utils
 
-# Setup configuration
-COPY git.sh .
-
-RUN bash git.sh
-    
 #Done
 RUN echo "---Done---"
- 
+
